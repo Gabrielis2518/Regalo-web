@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños</title>
+    <link rel="stylesheet" href="Diseño.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>¿Quieres saber qué hay dentro?</h1>
+        <div class="button-container">
+            <div>
+                <button class="btn" onclick="Rp_Si()">Sí</button>
+            </div>
+            <div>
+                <button class="btn no" id="noButton" onclick="Rp_No()">No</button>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- POPUP -->
+    <div class="overlay" id="popupOverlay">
+        <div class="popup">
+            <h2 id="popupMessage"></h2>
+            <button class="button" onclick="cerrarPopup()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="Interacciones.js"></script>
+
+</body>
+</html>

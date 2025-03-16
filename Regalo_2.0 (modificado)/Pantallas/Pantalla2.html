@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Imagen y PIN</title>
+    <link rel="stylesheet" href="Diseño2.css">
+</head>
+<body>
+   
+
+    <body>
+        <div class="caja">
+            <img src="Imagenes/Pin.jpg" alt="Imagen PIN">
+    
+            <input type="password" id="pinInput" placeholder="Ingrese PIN" readonly>
+    
+            <div class="teclado">
+                <button data-numero="1">1</button>
+                <button data-numero="2">2</button>
+                <button data-numero="3">3</button>
+                <button data-numero="4">4</button>
+                <button data-numero="5">5</button>
+                <button data-numero="6">6</button>
+                <button data-numero="7">7</button>
+                <button data-numero="8">8</button>
+                <button data-numero="9">9</button>
+                <button data-numero="0">0</button>
+                <button id="borrar">Borrar</button>
+                <button id="unlockButton">Desbloquear</button>
+            </div>
+    
+            <p id="message"></p>
+        </div>
+    
+        <script src="Interacciones.js"></script>
+    </body>
+</html>
