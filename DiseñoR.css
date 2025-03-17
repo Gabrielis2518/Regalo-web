@@ -1,0 +1,55 @@
+.fondo {
+    background-color: #f5f5f5;
+    background-image: url('Imagenes/confeti.jpg'); /* Cambia la URL por la imagen de globos que desees */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: none; /* Inicialmente oculto */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation: movimientoGlobos 20s infinite linear;
+}
+
+@keyframes movimientoGlobos {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+.fondo h1 {
+    color: #fff;
+    font-size: 3rem;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.fondo.mostrar h1 {
+    opacity: 1;
+}
+
+/* Caja de regalo */
+.gift-box {
+    cursor: pointer;
+    display: block;
+    margin: 0 auto; /* Esto asegura que la caja del regalo esté centrada */
+    width: 800px; /* Tamaño inicial del regalo, puede ser modificado */
+    max-width: 600px; /* Máximo tamaño, ajustable */
+    transition: transform 0.3s ease-in-out; /* Transición suave para cambios de tamaño */
+    
+    
+}
+
+#mensajeRegalo {
+    text-align: center;
+    color: #ff6600; /* Color llamativo */
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
