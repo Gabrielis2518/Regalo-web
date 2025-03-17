@@ -1,3 +1,26 @@
+function abrirRegalo() {
+    // Muestra el fondo de cumpleaños con globos
+    const fondoGlobos = document.getElementById("fondoGlobos");
+    
+    // Muestra el fondo de globos
+    fondoGlobos.style.display = "flex"; // Cambia display de none a flex
+    
+    // Agrega una clase para animar el mensaje de cumpleaños
+    setTimeout(() => {
+        fondoGlobos.classList.add("mostrar"); // Activa la animación de la opacidad del mensaje
+    }, 100); // Pequeño retraso para asegurar que el fondo se muestre primero
+    
+    // Oculta la caja de regalo
+    const contenedor = document.getElementById("contenedor");
+    contenedor.style.display = "none";
+    
+    // Después de 4 segundos, puedes redirigir a otra pantalla (si lo deseas)
+    setTimeout(function() {
+        window.location.href = "Pantalla1.html"; // Cambia esto a la URL de la próxima página
+    }, 6000);
+}
+
+
 let respuestasNo = [
     "¿Estas Seguro?",    
     "¿Enserio no lo quieres ver?", 
