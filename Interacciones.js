@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const pinInput = document.getElementById('pinInput')
     const unlockButton = document.getElementById('unlockButton')
     const message = document.getElementById('message')
-    const correctPIN = '1128'; // Cambia esto por tu PIN
+    const correctPIN = '112819'; // Cambia esto por tu PIN
     const botonesNumericos = document.querySelectorAll('.teclado button[data-numero]')
     const botonBorrar = document.getElementById('borrar')
 
