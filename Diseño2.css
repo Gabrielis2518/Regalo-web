@@ -91,5 +91,5 @@ body {
 }
 
 .teclado button:nth-child(10) {
-    transform: translate(115px, -1px); /* Mueve a la derecha y hacia arriba */
+    transform: translate(101px, -1px); /* Mueve a la derecha y hacia arriba */
 }
